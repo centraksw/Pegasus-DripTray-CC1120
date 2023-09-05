@@ -65,9 +65,6 @@ VOID FLASH_Erase_Segment(char* addr)
     //Disable All interrupts
     _DINT();
 
-    //Select the MCLK for Flash write and divide by 16
-    FCTL2 = FWKEY+FSSEL_1+FN2;
-    
     //Clear Lock
     FCTL3 = FWKEY;
 

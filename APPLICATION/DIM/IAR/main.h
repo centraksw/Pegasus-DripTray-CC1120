@@ -1,7 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 #ifdef __2X__
-#define VERSION                                             160
+#define VERSION                                             1
 #else
 #define VERSION                                             20
 #endif

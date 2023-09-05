@@ -172,8 +172,13 @@ typedef signed short                              INT16;
 #define MONITOR_DIM                               1
 
 #define MONITOR_DRIP_TRAY_DIM_3X                  18
-#define MONITOR_TYPE                              MONITOR_DRIP_TRAY_DIM_3X
 
+#ifdef __EXTERNAL_DIM__
+#define MONITOR_DIM_3X                            17 
+#define MONITOR_TYPE                              MONITOR_DIM_3X
+#else
+#define MONITOR_TYPE                              MONITOR_DRIP_TRAY_DIM_3X
+#endif
 #define MONITOR_UPGRADE                           1
 
 

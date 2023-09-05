@@ -240,7 +240,9 @@ static BOOL SendIAmAlive(BOOL blnNoDelay)
 
     PendingKeys |= KeyPressed;
     KeyPressed = 0;
-
+#ifdef __EXTERNAL_DIM__
+    PendingKeys = 0x3;
+#endif
     // Delay a random amount here Put the micro in LPM1
     // Range of delay - 30 ms  to 220 ms
     delayVal = GetDelayVal();
@@ -341,15 +343,11 @@ static BOOL SendIAmAlive(BOOL blnNoDelay)
             Reset(0);
         }
 
-        if( beaconFailCnt > 0 )
-        {
-            recoffset = (recoffset+499)/1000;
-            if( ack.Offset > recoffset )
-                ack.Offset = ack.Offset - recoffset;
+        recoffset = (recoffset+499)/1000;
+        if( ack.Offset > recoffset )
+            ack.Offset = ack.Offset - recoffset;
 
-            curSlot = RF_APP_WaitForBeacon(ack.Slot, ack.Offset);
-        }
-
+        curSlot = RF_APP_WaitForBeacon(ack.Slot, ack.Offset);
         // Command will be sent to us in the ACK packet
         // Process the command sent by the PC
         if(settings.bln30System)
@@ -842,10 +840,10 @@ VOID DimIRRFHandler(BYTE state, BOOL blnPaging)
         MD_Enable();
 
         LF_STEPUP_CONV_DIR &= ~LF_STEPUP_CONV;
-
-        if(settings.blnLEDBlink)
+        //Removed Red LED Indication for Trigger Requirement by Anila john as like CC1120 External DIM(ticket no:49899)
+        /*if(settings.blnLEDBlink)
             IO_LEDLit(LED_RED, 40);    // Changed the LED_Red as per the OFD Requirement by deepak (task id:10852  IT-374H DIM LEDs)
-    	else
+    	else*/
             TIMER_DelayMS(40);
 
         if( ReceiveHygieneACK() )

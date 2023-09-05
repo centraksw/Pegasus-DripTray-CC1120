@@ -121,6 +121,9 @@ VOID IO_LEDLit(BYTE color, DWORD delay)
 
 BYTE IO_ScanKeys()
 {
+#ifdef __EXTERNAL_DIM__
+    return 0;
+#endif
     BYTE keys;
 
     BTN_DIR  &= ~BTN1_PIN;
