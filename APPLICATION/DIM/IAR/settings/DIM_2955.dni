@@ -1,0 +1,81 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[State Storage]
+Control Register=0
+[Sequencer]
+Control Register=0
+NextState0=0
+NextState1=0
+[Action Register]
+Break=0
+State Storage=0
+[DebugChecksum]
+Checksum=2122230843
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[EEM State Storage]
+Buffer=BAAAAAAAAAAAAAAAAAAAAAAA
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=0
+Graph=0
+Symbiont=0
+Exclusions=
+[watch_formats]
+Fmt0={W}0:FCTL2	4	0
+Fmt1={W}0:flash_settings.DIMId_3X	4	0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\DRV\timer_drv.c}.238.5" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\rf_app.c}.634.1" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\DRV\ccxx2x_drv.c}.477.5" 0 0 0 0 "" 0 ""
+Bp3=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\rf.c}.618.17" 0 0 0 0 "" 0 ""
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\general.c}.44.1" 0 0 0 0 "" 0 ""
+Bp5=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\rf.c}.198.5" 0 0 0 0 "" 0 ""
+Bp6=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\general.c}.44.1" 0 0 0 0 "" 0 ""
+Bp7=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\general.c}.44.1" 0 0 0 0 "" 0 ""
+Bp8=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\COMMON\general.c}.44.7" 0 0 0 0 "" 0 ""
+Bp9=_ "STD_CODE" "{$PROJ_DIR$\main.c}.357.21" 1 0 0 0 "" 0 ""
+Bp10=_ "STD_CODE" "{$PROJ_DIR$\io.c}.141.1" 1 0 0 0 "" 0 ""
+Count=11
+[FET]
+Clock mode=38
+Extended Clock mode=-1
+Secure Password=
+Extended Clock Control Enable=1
+Advanced Extended Clock Control=0
+Emulation mode=0
+Free running=0
+Shutting Down=3
+[Memory Dump]
+Start address=
+Lenghth=
+Address info=0
+Format=0
+Dump registers=0
+PC=0
+SP=0
+SR=0
+all registers=0
+File name=
+[Aliases]
+Count=0
+SuppressDialog=0

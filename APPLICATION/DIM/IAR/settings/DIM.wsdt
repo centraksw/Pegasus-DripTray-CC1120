@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>DIM/DIM_PART2</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>281</Column0><Column1>0</Column1><Column2>27</Column2><Column3>1307796</Column3></ColumnWidths>
+      </Workspace>
+      <Find-in-Files>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows>
+        
+        
+        
+      <ColumnWidth0>552</ColumnWidth0><ColumnWidth1>78</ColumnWidth1><ColumnWidth2>946</ColumnWidth2></Find-in-Files>
+      <Build>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1541</ColumnWidth1></Debug-Log><Breakpoints><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Breakpoints><Disassembly><MixedMode>1</MixedMode><CodeCovShow>0</CodeCovShow></Disassembly></Static>
+    <Windows>
+      
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18853-13255</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>DIM</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\main.c</Filename><XPos>0</XPos><YPos>97</YPos><SelStart>3605</SelStart><SelEnd>3617</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\io.c</Filename><XPos>0</XPos><YPos>67</YPos><SelStart>2235</SelStart><SelEnd>2235</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\COMMON\defines.h</Filename><XPos>0</XPos><YPos>117</YPos><SelStart>5720</SelStart><SelEnd>5720</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\flash_app.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>6600</SelStart><SelEnd>6600</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\rf_app.c</Filename><XPos>0</XPos><YPos>245</YPos><SelStart>7168</SelStart><SelEnd>7180</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\dim.c</Filename><XPos>0</XPos><YPos>181</YPos><SelStart>5836</SelStart><SelEnd>5856</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\APPLICATION\DIM\IAR\dfu.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>517</SelStart><SelEnd>517</SelEnd></Tab><ActiveTab>6</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>E:\IR - RF\2x - INTOUCH\3.0-Dev\3.0SYSTEM\SOURCE\2014-10-01-Dim-Upgrade\3.0-LF-DIM\COMMON\rf.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1934</SelStart><SelEnd>1934</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00ad9fc8><key>iaridepm.enu1</key></Toolbar-00ad9fc8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>780</Bottom><Right>328</Right><x>-2</x><y>-2</y><xscreen>41</xscreen><yscreen>111</yscreen><sizeHorzCX>25625</sizeHorzCX><sizeHorzCY>134709</sizeHorzCY><sizeVertCX>206250</sizeVertCX><sizeVertCY>949029</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\DIM_2955.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All</name>
+      <member>
+        <project>DIM_2955</project>
+        <configuration>DIM_Release</configuration>
+      </member>
+      <member>
+        <project>DIM_2955</project>
+        <configuration>DIM_PART1</configuration>
+      </member>
+      <member>
+        <project>DIM_2955</project>
+        <configuration>DIM_PART2</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+
