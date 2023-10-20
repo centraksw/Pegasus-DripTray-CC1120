@@ -116,7 +116,7 @@ VOID DIM_ProxymityInit()
 
     /* Set Proximity IR LED current */
     I2C_Command[0] = IR_LED_CURRENT;
-    I2C_Command[1] = 2;
+    I2C_Command[1] = flash_settings.TxPower;
     I2CMST_writeBlock(SLAVE_ADDRESS, 2, I2C_Command);
     TIMER_CCR_Delay(5);
 
