@@ -116,7 +116,7 @@ VOID DIM_ProxymityInit()
 
     /* Set Proximity IR LED current */
     I2C_Command[0] = IR_LED_CURRENT;
-    I2C_Command[1] = flash_settings.TxPower;
+    I2C_Command[1] = 2;
     I2CMST_writeBlock(SLAVE_ADDRESS, 2, I2C_Command);
     TIMER_CCR_Delay(5);
 
@@ -177,10 +177,14 @@ BOOL DIM_IsProximityTriggered(BYTE Profile)
                 {
                     blnProximitySet = TRUE;
                     TriggerSource |= TRIGGER_PROXIMITY_SENSOR;
+                    ProximityCount = 0;
                 }
             }
+	    	if( ProximityCount >= flash_settings.MaxProximityValue )
+			{
 	    ProximityCount = flash_settings.MaxProximityValue-1;
             memcpy(ProximityArray1+0, ProximityArray1+1, ProximityCount * sizeof(WORD));
+			}
         }
         ProximityArray1[ProximityCount++] = ProximityValue;
     }
