@@ -1,9 +1,9 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 #ifdef __2X__
-#define VERSION                                             161
+#define VERSION                                             162
 #else
-#define VERSION                                             20
+#define VERSION                                             21
 #endif
 extern BOOL blnSendAliveData;
 extern BYTE beaconFailCnt;
