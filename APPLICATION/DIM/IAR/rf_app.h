@@ -9,7 +9,7 @@ extern BYTE triggerDelay;
 extern BOOL blnTriggered;
 extern BOOL blnTriggerStatus;
 extern BYTE RepeatRetry;
-extern BYTE IRCount;
+extern WORD IRCount;
 extern BYTE LocationDataIndex;
 extern DWORD cmdReply;
 extern WORD LBIValue;

@@ -26,7 +26,7 @@ BYTE MonitorDataFailCnt = 0;
 BYTE PseudoSycnRetryCnt=0;
 WORD LBIValue = 0;
 BYTE RepeatRetry = 0;
-BYTE IRCount = 0;
+WORD IRCount = 0;
 BOOL blnTriggerStatus = FALSE;
 BYTE triggerDelay = 0;
 DWORD cmdReply = 0;
@@ -565,7 +565,7 @@ VOID RF_APP_PagingProcess()
 
         if( DIM_CheckIsTriggered(settings.Profile) && IRCount==0 && triggerDelay==0 )
         {
-            IRCount = 6;
+            IRCount = 1000;
             blnTriggered = TRUE;
             blnTriggerStatus = TRUE;
             sInfo.TriggerCount += 1;
@@ -800,7 +800,8 @@ static BOOL ReceiveHygieneACK()
             if( RF_ReceiveHygieneData(settings.RoomId, &TagId) )
             {
                 RF_SendHygieneACK(TagId);
-                blnRes = TRUE;
+                //For LF TX test always false the ACK 
+                blnRes = FALSE;
             }
         }
         // By defaault RF_TurnOff called inside the RF Receive.  Here we are doing RF_Send after RF_Receive.
@@ -839,11 +840,10 @@ VOID DimIRRFHandler(BYTE state, BOOL blnPaging)
         TACTL = TACLR + TASSEL_1 + MC_2;
         MD_Enable();
 
-        LF_STEPUP_CONV_DIR &= ~LF_STEPUP_CONV;
-        //Removed Red LED Indication for Trigger Requirement by Anila john as like CC1120 External DIM(ticket no:49899)
-        /*if(settings.blnLEDBlink)
+        LF_STEPUP_CONV_DIR &= ~LF_STEPUP_CONV;        
+        if(settings.blnLEDBlink)
             IO_LEDLit(LED_RED, 40);    // Changed the LED_Red as per the OFD Requirement by deepak (task id:10852  IT-374H DIM LEDs)
-    	else*/
+    	else
             TIMER_DelayMS(40);
 
         if( ReceiveHygieneACK() )

@@ -139,7 +139,7 @@ VOID main()
                 ReadyToSendLocationDataCnt -= 1;
             if( DIM_CheckIsTriggered(settings.Profile) && IRCount==0 && triggerDelay==0 )
             {
-                IRCount = 4;
+                IRCount = 1000;
                 blnTriggered = TRUE;
                 blnTriggerStatus = TRUE;
                 sInfo.TriggerCount += 1;
