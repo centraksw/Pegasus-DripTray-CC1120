@@ -162,7 +162,6 @@ VOID FLASH_APP_Read()
 
     FLASH_Summary_Read();
 
-    flash_settings.TxPower = 20;
     flash_settings.MeasurementRate = 2;
     flash_settings.Threshold = 15;
 
