@@ -5,5 +5,7 @@
 
 VOID LF_Initialize();
 VOID LF_Transmit(WORD irData,BYTE LFRange);
+VOID EnableLEDTimer();
+VOID DisableLEDTimer();
 
 #endif

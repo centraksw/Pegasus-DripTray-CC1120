@@ -850,7 +850,7 @@ VOID DimIRRFHandler(BYTE state, BOOL blnPaging)
         {
             MD_Disable();
             if(settings.blnLEDBlink)
-              IO_LEDLit(LED_GREEN, 50);
+            EnableLEDTimer();
             MD_Enable();
             IRCount = 0;
             RepeatRetry = 0;

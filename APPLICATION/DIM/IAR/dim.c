@@ -121,16 +121,8 @@ VOID DIM_ProxymityInit()
     TIMER_CCR_Delay(5);
 
     /* Set PROXIMITY MEASUREMENT SIGNAL FREQUENCY */
-    I2C_Command[0] = PROXIMITY_SIGNAL_FREQ;
-    I2C_Command[1] = 0x03;
-    I2CMST_writeBlock(SLAVE_ADDRESS, 2, I2C_Command);
-    TIMER_CCR_Delay(5);
 
     /* Set PROXIMITY MODULATOR TIMING ADJUSTMENT Delay time = 4, Dead Time = 1*/
-    I2C_Command[0] = PROXIMITY_MODULATOR_TIMING;
-    I2C_Command[1] = 0x81;
-    I2CMST_writeBlock(SLAVE_ADDRESS, 2, I2C_Command);
-    TIMER_CCR_Delay(5);
 }
 
 BOOL DIM_IsProximityTriggered(BYTE Profile)

@@ -2,6 +2,7 @@
 #include "pinconfig.h"
 #include "lf.h"
 #include "timer_drv.h"
+#include "io.h"
 
 #define MARK_SIZE                         28
 #define END_BIT                           80
@@ -75,7 +76,10 @@ VOID LF_Transmit(WORD irData,BYTE LFRange)
     OutputLow(393);
 
     // Start bit
+    if( LFRange == LF_RANGE_HIGH )
     OutputHigh(71);
+    else
+        OutputHigh(77);
 
     for(idx=9; idx>=0; idx-=3)
     {
@@ -89,10 +93,23 @@ VOID LF_Transmit(WORD irData,BYTE LFRange)
     // Turn off Signal, DC
     LF_DATA_OUT &= ~LF_DATA;
   // LF_ENV_SIGNAL_OUT &= ~LF_ENV_SIGNAL;
+}
+static BOOL blnTurnOnLED = FALSE;
+VOID EnableLEDTimer()
+{
+    blnTurnOnLED = TRUE;
+    TA1CCTL1 = 0;
+    TA1CTL = TASSEL_1 + MC_2;
+    TA1CCR1 = TA1R + 16388;
+    TA1CCTL1 |= CCIE;
+    IO_TurnOnLED(LED_GREEN);
+}
 
-    // Turn off Gate Control
-    // LF_DATA_DIR &= ~LF_DATA;
-  //  LF_ENV_SIGNAL_DIR &= ~LF_ENV_SIGNAL;
+VOID DisableLEDTimer()
+{
+    TA1CCTL1 = 0;
+    blnTurnOnLED = FALSE;
+    IO_TurnOffLED(LED_GREEN);
 }
 
 #pragma vector = TIMER0_A1_VECTOR
@@ -102,3 +119,12 @@ __interrupt void Timer0_ISR(void)
         Micro_Wakeup();
 }
 
+#pragma vector = TIMER1_A1_VECTOR
+__interrupt void Timer1_ISR(void)
+{
+    if( TA1IV == 2)
+    {
+        if(blnTurnOnLED)
+            DisableLEDTimer();
+    }
+}

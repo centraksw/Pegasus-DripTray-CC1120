@@ -7,8 +7,6 @@
 #define IR_LED_CURRENT                                0x83
 #define IR_DATA_MSB                                   0x87
 #define IR_DATA_LSB                                   0x88
-#define PROXIMITY_SIGNAL_FREQ	                      0x89
-#define PROXIMITY_MODULATOR_TIMING                    0x8A
 #define MAX_PROXIMITY_DATA                            10
 
 #define TRIGGER_NONE                                  0
