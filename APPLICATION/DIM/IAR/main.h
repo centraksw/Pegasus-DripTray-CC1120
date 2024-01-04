@@ -1,7 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 #ifdef __2X__
-#define VERSION                                             7
+#define VERSION                                             8
 #else
 #define VERSION                                             4
 #endif

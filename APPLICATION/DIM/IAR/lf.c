@@ -7,7 +7,7 @@
 #define MARK_SIZE                         28
 #define END_BIT                           80
 
-static WORD LF_BIT_VALUE[] = {47, 109, 175, 245, 310, 378, 444, 515};
+static WORD LF_BIT_VALUE[] = {47, 109, 181, 245, 318, 378, 454, 515};
 
 static VOID OutputHigh(WORD val)
 {

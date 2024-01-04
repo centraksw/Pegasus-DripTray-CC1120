@@ -206,8 +206,8 @@ typedef signed short                              INT16;
 #define MONITOR_BASE_ID                           0xC00000
 
 
-#define LF_RANGE_LOW                             3
-#define LF_RANGE_MEDIUM                          7
+#define LF_RANGE_LOW                             2
+#define LF_RANGE_MEDIUM                          5
 #define LF_RANGE_HIGH                           16
 
 #include "msp430g2955.h"
