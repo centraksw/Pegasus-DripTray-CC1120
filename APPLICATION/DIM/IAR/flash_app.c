@@ -161,6 +161,8 @@ VOID FLASH_APP_Read()
     FLASH_Read(&flash_settings.HardwareRevision, ADDR_HARDWARE_REVISION, sizeof(flash_settings.HardwareRevision) );
 
     FLASH_Summary_Read();
-
-
+	
+	//Set constant values for Measurement Rate and Threshold	
+    flash_settings.MeasurementRate = 1;	
+    flash_settings.Threshold = 100;
 }
