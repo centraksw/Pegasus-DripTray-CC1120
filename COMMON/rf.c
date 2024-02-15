@@ -108,6 +108,7 @@ VOID RF_SetChannel(BYTE Channel)
     CC_DRV_WriteReg(CC112X_FREQ0, Freq0);
 
     CC_DRV_Strobe(CC112X_SCAL);
+    TIMER_DelayUS(300);
 }
 
 VOID RF_Switch_Bitrate(BYTE Bitrate)
