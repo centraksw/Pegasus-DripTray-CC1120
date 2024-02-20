@@ -229,6 +229,7 @@ VOID main()
 
                         blnSendAliveData = TRUE;
                         g_LocationCounter = MONITOR_I_AM_ALIVE_INTERVAL;
+                        ReadyToSendLocationDataCnt = (flash_settings.DIMId_2X % 5) + 2;
                     }
                 }
 

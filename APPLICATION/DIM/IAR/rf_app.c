@@ -382,6 +382,7 @@ BOOL RF_APP_DoPaging(BOOL bln30System)
 
     // Set paging channel
     RF_SetChannel(settings.Data_Channel);
+    TIMER_DelayUS(500);
 
     // Set Tx Power
     RF_SetTXPower(PLUS_3_DBM);
