@@ -164,5 +164,5 @@ VOID FLASH_APP_Read()
 	
 	//Set constant values for Measurement Rate and Threshold	
     flash_settings.MeasurementRate = 1;	
-    flash_settings.Threshold = 100;
+    flash_settings.Threshold = 80;
 }
